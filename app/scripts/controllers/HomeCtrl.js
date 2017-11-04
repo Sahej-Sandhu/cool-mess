@@ -1,8 +1,12 @@
 (function(){
-  function HomeCtrl(){
+  function HomeCtrl(Room){
+
+    this.rooms = Room.all;
+
+
   }
 
   angular
     .module('coolMess')
-    .controller('HomeCtrl', [HomeCtrl]);
+    .controller('HomeCtrl', ["Room", HomeCtrl]);
 })();

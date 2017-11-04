@@ -1,1 +1,8 @@
+
 <h1>Home Page</h1>
+<div class="main-room">
+  <h2 class="navbar-link">Rooms</h2>
+  <ul>
+    <li ng-repeat="room in home.rooms">{{ room.$value }}</li>
+  </ul>
+</div>
