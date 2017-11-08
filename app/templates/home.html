@@ -1,7 +1,7 @@
 
-<h1>Home Page</h1>
-<div class="main-room">
-  <h2 class="navbar-link">Rooms</h2>
+<h1>Cool Messenger</h1>
+<div>
+  <h2>Rooms <button ng-click="home.newRoom()">Add Room</button></h2>
   <ul>
     <li ng-repeat="room in home.rooms">{{ room.$value }}</li>
   </ul>
