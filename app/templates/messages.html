@@ -1,0 +1,10 @@
+<div class="message-box">
+  <div>
+    <p>hi</p>
+      <li ng-repeat="m in messages.coolMessages">{{m.content}}</li>
+      <div>
+        <input type="text" class="message-box" placeholder="Enter message here..." ng-model="messages.coolMessage">
+      </div>
+      <button type="submit" class="sendButton" ng-click="messages.send()">Send</button>
+  </div>
+</div>

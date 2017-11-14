@@ -7,7 +7,7 @@
 
     this.cancelNewRoom = function(){
       $uibModalInstance.dismiss();
-    }
+    };
 
   }
 
