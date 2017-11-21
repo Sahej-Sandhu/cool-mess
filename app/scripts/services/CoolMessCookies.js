@@ -1,10 +1,9 @@
 (function(){
-  function CoolMessCookies($cookies, $uibModal, $rootScope){
+  function CoolMessCookies($cookies, $uibModal){
     $cookies.put('coolMessCurrentUser', "");
-    $rootScope.CurrentUser = $cookies.get('coolMessCurrentUser');
+    var currentUser = $cookies.get('coolMessCurrentUser');
 
-    // if(!$rootScope.CurrentUser || $rootScope.CurrentUser === ''){
-    //
+    // if(!currentUser || currentUser === ''){
     //   $uibModal.open({
     //     animation: true,
     //     templateUrl: '/templates/login.html',

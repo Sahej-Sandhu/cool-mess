@@ -1,14 +1,14 @@
 (function(){
   function MessageCtrl(Message, $uibModalInstance, $cookies, $rootScope){
     this.coolMessages = Message.getByRoomId(-1);
-    // var currentUser = $cookies.get('coolMessCurrentUser');
+    var currentUser = $cookies.get('coolMessCurrentUser');
 
     this.send = function(){
       Message.add({
         content: this.coolMessage,
         roomId: Message.getRoomId(),
         sentAt: new Date(),
-        userName: $rootScope.CurrentUser
+        userName: currentUser
       });
 
       this.coolMessage = "";

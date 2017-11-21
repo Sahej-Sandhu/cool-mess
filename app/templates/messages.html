@@ -1,7 +1,6 @@
 <div class="message-box">
   <div>
-    <p>hi</p>
-      <li ng-repeat="m in messages.coolMessages">{{m.content}} {{m.userName}}</li>
+      <p ng-repeat="m in messages.coolMessages">{{m.content}} - {{m.userName}}</p>
       <div>
         <input type="text" class="message-box" placeholder="Enter message here..." ng-model="messages.coolMessage">
       </div>
