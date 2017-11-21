@@ -1,8 +1,15 @@
 
 <h1>Cool Messenger</h1>
 <div>
-  <h2 class="rooms-header">Rooms <button class="add-button" ng-click="home.newRoom()">Add Room</button></h2>
-  <ul class="rooms">
-    <li ng-repeat="room in home.rooms"><button class="room" ng-click="home.showMessages(room.$id)">{{ room.$value }}</button></li>
-  </ul>
+  <h2>Hello, "{{currentUser}}"</h2>
+  <h2 class="rooms-header">Rooms
+    <button class="add-button" ng-click="home.newRoom()">Add Room</button>
+    <button class="change-user" ng-click="home.changeUsers()">Login/Change User</button>
+  </h2>
+
+  <div ng-show="currentUser">
+    <ul class="rooms">
+      <li ng-repeat="room in home.rooms"><button class="room" ng-click="home.showMessages(room.$id)">{{ room.$value }}</button></li>
+    </ul>
+  </div>
 </div>

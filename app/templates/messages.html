@@ -1,10 +1,13 @@
 <div class="message-box">
   <div>
     <p>hi</p>
-      <li ng-repeat="m in messages.coolMessages">{{m.content}}</li>
+      <li ng-repeat="m in messages.coolMessages">{{m.content}} {{m.userName}}</li>
       <div>
         <input type="text" class="message-box" placeholder="Enter message here..." ng-model="messages.coolMessage">
       </div>
-      <button type="submit" class="sendButton" ng-click="messages.send()">Send</button>
+      <div class="mess-box-buttons">
+        <button type="submit" class="sendButton" ng-click="messages.send()">Send</button>
+        <button type="submit" class="close-room" ng-click="messages.closeRoom(roomId)">Close Room</button>
+      </div>
   </div>
 </div>

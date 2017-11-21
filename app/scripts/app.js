@@ -15,6 +15,6 @@
   }
 
   angular
-    .module('coolMess', ['ui.bootstrap', 'ui.router', 'firebase'])
+    .module('coolMess', ['ui.bootstrap', 'ui.router', 'firebase', 'ngCookies'])
     .config(config);
 })();
